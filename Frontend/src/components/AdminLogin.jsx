@@ -6,7 +6,7 @@ const AdminLogin = ({ onLogin }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-
+  const API_URL = import.meta.env.VITE_API_URL;
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!password.trim()) {
@@ -16,7 +16,6 @@ const AdminLogin = ({ onLogin }) => {
 
     setLoading(true);
     setError('');
-
     try {
       // Test the password by making a request to the API
       const res = await fetch(`${API_URL}/api/feedbacks`, {
@@ -24,7 +23,8 @@ const AdminLogin = ({ onLogin }) => {
           Authorization: `Bearer ${password}`,
         },
       });
-
+      console.log(res);
+      
       if (res.status === 401) {
         setError('Incorrect admin password');
         toast.error('Authentication failed');
@@ -39,6 +39,7 @@ const AdminLogin = ({ onLogin }) => {
       toast.success('Logged in successfully');
       onLogin(password);
     } catch (err) {
+      console.log(err);
       setError('Authentication failed. Please try again.');
       toast.error('Authentication failed');
     } finally {

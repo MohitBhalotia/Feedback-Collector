@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import feedbackRoutes from './routes/feedback.js';
+import feedbackRoutes from '../routes/feedback.js';
 
 dotenv.config();
 

@@ -18,6 +18,7 @@ const AdminDashboard = ({ adminPassword }) => {
   const [sortDirection, setSortDirection] = useState('desc');
   const [currentPage, setCurrentPage] = useState(1);
   const [categoryFilter, setCategoryFilter] = useState('all');
+  const API_URL = import.meta.env.VITE_API_URL;
   
   // Categories for filtering
   const categories = [

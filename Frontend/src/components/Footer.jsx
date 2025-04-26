@@ -6,11 +6,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-6 text-center">
           <p className="text-sm text-gray-700 dark:text-gray-400">
-            Feedback Collector &copy; {new Date().getFullYear()} &mdash; Created by Your Name. Submission for Your Info.
+            Feedback Collector &copy; {new Date().getFullYear()} &mdash; Created by Mohit Bhalotia
           </p>
           <div className="flex justify-center space-x-4 mt-2">
             <a 
-              href="#" 
+              href="https://github.com/MohitBhalotia" 
+              target='_blank'
               className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 transition"
               aria-label="GitHub"
             >
@@ -19,7 +20,8 @@ const Footer = () => {
               </svg>
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/mohit-bhalotia/" 
+              target='_blank'
               className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 transition"
               aria-label="LinkedIn"
             >

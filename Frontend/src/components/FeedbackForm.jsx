@@ -5,6 +5,7 @@ const FeedbackForm = ({ onSubmitSuccess }) => {
   const [form, setForm] = React.useState({ name: '', email: '', message: '', category: 'general' });
   const [errors, setErrors] = React.useState({});
   const [loading, setLoading] = React.useState(false);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   // Categories for feedback
   const categories = [
