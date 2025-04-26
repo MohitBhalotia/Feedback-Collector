@@ -86,14 +86,14 @@ npm run dev
 
 ## 📋 Usage
 - Users submit feedback via the home page form.
-- Admins log in via `/admin` to review, filter, and manage feedback.
+- Admins log in to review, filter, and manage feedback.
 - Use the theme toggle in the header to switch between light and dark modes.
 
 ---
 
 ## 🛡️ Admin Panel
-- Access at `/admin` route.
 - Enter the admin password (set in your backend `.env`).
+- Admin Password : 12345678
 - View, filter, and delete feedback entries securely.
 
 ---
@@ -106,26 +106,12 @@ npm run dev
 ---
 
 ## ☁️ Deployment
-- Deploy backend (e.g., Render, Heroku, Railway)
-- Deploy frontend (e.g., Vercel, Netlify)
+- Deploy backend (Vercel)
+- Deploy frontend (Netlify)
 - Update environment variables for production URLs and secrets.
 
----
 
-## 🤝 Contributing
-Contributions are welcome! Please open issues or pull requests for new features, bug fixes, or suggestions.
 
----
-
-## 📄 License
-This project is licensed under the MIT License.
-
----
-
-## 📬 Contact
-Created by [Your Name](https://github.com/yourusername)  
-Email: your.email@example.com
-
-Feel free to connect on [LinkedIn](https://www.linkedin.com/) or [Twitter](https://twitter.com/)!
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/mohit-bhalotia) 
 
 ---

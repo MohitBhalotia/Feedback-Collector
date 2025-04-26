@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
 
 const AdminLogin = ({ onLogin }) => {
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState(import.meta.env.VITE_ADMIN_PASSWORD||'');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
   const API_URL = import.meta.env.VITE_API_URL;
   const handleSubmit = async (e) => {
     e.preventDefault();
