@@ -1,0 +1,48 @@
+/* Custom scrollbar styles for Admin Dashboard */
+
+.admin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #0e0f31 #f3f4f6;
+}
+
+/* Light mode scrollbar */
+.admin-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.admin-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #0f102a 30%, #0f0f20 100%);
+  border-radius: 8px;
+  min-height: 40px;
+}
+
+.admin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #100f2d 0%, #0f0f20 100%);
+}
+
+.admin-scrollbar::-webkit-scrollbar-corner {
+  background: #f3f4f6;
+}
+
+/* Dark mode scrollbar */
+:global(.dark) .admin-scrollbar {
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+:global(.dark) .admin-scrollbar::-webkit-scrollbar {
+  background: #1f2937;
+}
+
+:global(.dark) .admin-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #374151 30%, #4b5563 100%);
+}
+
+:global(.dark) .admin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4b5563 0%, #6b7280 100%);
+}
+
+:global(.dark) .admin-scrollbar::-webkit-scrollbar-corner {
+  background: #1f2937;
+}
