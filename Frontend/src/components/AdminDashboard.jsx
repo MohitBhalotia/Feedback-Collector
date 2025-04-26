@@ -93,7 +93,7 @@ const AdminDashboard = ({ adminPassword }) => {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch("http://localhost:5000/api/feedbacks", {
+      const res = await fetch(`${API_URL}/api/feedbacks`, {
         headers: {
           Authorization: `Bearer ${adminPassword}`,
         },
@@ -135,7 +135,7 @@ const AdminDashboard = ({ adminPassword }) => {
     
     setDeletingId(id);
     try {
-      const res = await fetch(`http://localhost:5000/api/feedbacks/${id}`, {
+      const res = await fetch(`${API_URL}/api/feedbacks/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${adminPassword}`,

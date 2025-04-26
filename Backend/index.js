@@ -12,7 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api', feedbackRoutes);
-
+app.get('/', (req, res) => {
+  res.send('Welcome to Feedback Collector Backend');
+});
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.MONGODB_URI, {

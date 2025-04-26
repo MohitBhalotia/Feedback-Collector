@@ -19,7 +19,7 @@ const AdminLogin = ({ onLogin }) => {
 
     try {
       // Test the password by making a request to the API
-      const res = await fetch('http://localhost:5000/api/feedbacks', {
+      const res = await fetch(`${API_URL}/api/feedbacks`, {
         headers: {
           Authorization: `Bearer ${password}`,
         },

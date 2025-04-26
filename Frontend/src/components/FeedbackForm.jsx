@@ -51,7 +51,7 @@ const FeedbackForm = ({ onSubmitSuccess }) => {
       console.log(formData);
       
       
-      const res = await fetch("http://localhost:5000/api/submit-feedback", {
+      const res = await fetch(`${API_URL}/api/submit-feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
